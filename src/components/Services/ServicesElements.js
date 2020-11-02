@@ -1,12 +1,16 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  height: 600px; /*800px to 600px*/
+  height: 600px; /*860px to 600px*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
+
+  @media screen and (max-width: 1000px) {
+    height: 860px;
+  }
 
   @media screen and (max-width: 768px) {
     height: 1100px;
