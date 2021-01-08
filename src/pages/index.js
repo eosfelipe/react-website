@@ -7,8 +7,10 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
+  homeObjFour,
 } from "../components/InfoSection/Data";
-import Services from "../components/Services";
+import InfoSectionServices from "../components/InfoSectionServices";
+import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -25,8 +27,9 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-      <Services />
-      <InfoSection {...homeObjThree} />
+      <InfoSectionServices />
+      <Newsletter />
+      <InfoSection {...homeObjFour} />
       <Footer />
     </>
   );

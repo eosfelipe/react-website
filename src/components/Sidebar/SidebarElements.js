@@ -19,7 +19,7 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: #f9f9f9;
 `;
 
 export const Icon = styled.div`
@@ -33,7 +33,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-  color: #fff;
+  color: #f9f9f9;
 `;
 
 export const SidebarMenu = styled.ul`
@@ -55,8 +55,26 @@ export const SidebarLink = styled(LinkScroll)`
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  text-decorarion: none;
-  color: #fff;
+  text-decoration: none;
+  color: #f9f9f9;
+  cursor: pointer;
+
+  &:hover {
+    color: #01bf71;
+    transition: 0.2s ease-in-out;
+  }
+`;
+
+export const SidebarLinkExt = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: #f9f9f9;
   cursor: pointer;
 
   &:hover {
@@ -75,7 +93,7 @@ export const SidebarRoute = styled(LinkRouter)`
   background: #01bf71;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #fff;
+  color: #f9f9f9;
   font-size: 1.3rem;
   outline: none;
   border: none;
@@ -83,8 +101,8 @@ export const SidebarRoute = styled(LinkRouter)`
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
-  &:hover{
-    background: #fff;
+  &:hover  {
+    background: #f9f9f9;
     color: #010606;
     transition: all 0.2s ease-in-out;
   }

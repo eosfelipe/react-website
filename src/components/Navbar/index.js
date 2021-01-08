@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaWhatsapp } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
@@ -12,6 +12,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  SocialIconLink,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -41,7 +42,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              dolla
+              NORDER
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -61,44 +62,34 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="discover"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Discover
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
                   to="services"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={-120}
                 >
                   Services
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="signup"
+                  to="contact"
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact="true"
                   offset={-80}
                 >
-                  Sign Up
+                  Contact
                 </NavLinks>
               </NavItem>
+              <NavItem>
+                  <SocialIconLink href="https://api" target="_blank" aria-label="Whatsapp">
+                    <FaWhatsapp />
+                  </SocialIconLink>
+              </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

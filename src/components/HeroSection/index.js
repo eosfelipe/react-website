@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
-import { Button } from "../ButtonElements";
+import Hero from "../../images/hero.jpg";
+import { Button2 } from "../ButtonElements";
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
+  ImageBg,
   HeroContent,
   HeroH1,
   HeroP,
   HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
 } from "./HeroElements";
 
 const HeroSection = () => {
@@ -23,17 +21,16 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <ImageBg src={Hero} alt="" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>A New Order Of Life</HeroH1>
         <HeroP>
-          Sign up for a new account today and receive $250 in credit towards
-          your next payment.
+          Think - Eat - Live
         </HeroP>
         <HeroBtnWrapper>
-          <Button
-            to="signup"
+          <Button2
+            to="contact"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
@@ -44,8 +41,8 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+            <span>Agenda tu cita</span>
+          </Button2>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

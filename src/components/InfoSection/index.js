@@ -24,6 +24,9 @@ const InfoSection = ({
   headline,
   darkText,
   description,
+  p1,
+  p2,
+  p3,
   buttonLabel,
   img,
   alt,
@@ -39,23 +42,26 @@ const InfoSection = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
-                  <Button
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
+                {headline && (
+                  <Heading lightText={lightText}>{headline}</Heading>
+                )}
+                {!headline ? <Subtitle darkText={darkText}>{description}</Subtitle> : (
+                  <ul>
+                    
+                      
+                      <li><Subtitle style={{marginBottom: 0}} darkText={darkText}>{p1}</Subtitle></li>
+                    
+                    
+                      
+                      <li><Subtitle style={{marginBottom: 0}} darkText={darkText}>{p2}</Subtitle></li>
+                    
+                    
+                      
+                      <li><Subtitle style={{marginBottom: 0}} darkText={darkText}>{p3}</Subtitle></li>
+                    
+                    
+                  </ul>
+                )}
               </TextWrapper>
             </Column1>
             <Column2>
