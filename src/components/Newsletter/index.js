@@ -54,7 +54,7 @@ const Newsletter = () => {
     <>
       <NewsletterContainer>
         <NewsletterWrapper>
-          <NewsletterRow id="row">
+          <NewsletterRow>
             <Title lightText={lightText}>
               Quiero recibir recetas y promociones
             </Title>

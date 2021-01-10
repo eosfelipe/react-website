@@ -5,7 +5,7 @@ export const homeObjOne = {
   lightTextDesc: false,
   topLine: "N",
   description:
-    "El orden es importante en nuestra vida, y mucho más en nuestra alimentación. Comer a destiempo o no comer, comer sin límite y sin control,puede ser nocivo para la salud. Recuperemos nuestro orden alimenticio y equilibrio al comer.",
+    "El orden es importante en nuestra vida, y mucho más en nuestra alimentación. Comer a destiempo o no comer, comer sin límite y sin control, puede ser nocivo para la salud. Recuperemos nuestro orden alimenticio y equilibrio al comer.",
   buttonLabel: "Get started",
   imgStart: false,
   img: require("../../images/ban.png"),

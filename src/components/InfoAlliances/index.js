@@ -12,17 +12,18 @@ import {
 const InfoAlliances = () => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer id="contact">
         <InfoWrapper>
           <InfoRow>
             <Title>Alianzas</Title>
             <Description>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
-              ipsa, iste dolores quisquam illo corrupti quos animi ut minima
-              illum aliquam maiores delectus sint voluptatibus earum, ab at
-              totam maxime. Lorem, ipsum dolor sit amet consectetur adipisicing
-              elit. Velit quis deserunt nihil minima adipisci debitis ratione
-              aut impedit, nostrum id!
+              Para ofrecerte un servicio completo contamos con tarifas
+          
+                 especiales, descuentos y promociones de marcas aliadas que
+      
+                     complementan nuestros servicios para vivir una experiencia
+             
+              completa. Solicita el cupón del mes.
             </Description>
           </InfoRow>
           <InfoGrid>

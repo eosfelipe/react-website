@@ -13,6 +13,7 @@ import InfoSectionServices from "../components/InfoSectionServices";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import InfoAlliances from "../components/InfoAlliances";
+import ContactSection from "../components/ContactSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,6 +32,7 @@ const Home = () => {
       <InfoSectionServices />
       <Newsletter />
       <InfoAlliances />
+      <ContactSection />
       <Footer />
     </>
   );

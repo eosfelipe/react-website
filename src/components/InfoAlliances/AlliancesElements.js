@@ -30,6 +30,10 @@ export const InfoRow = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 3rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 15px 15px;
+  }
 `;
 
 export const Title = styled.p`

@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  About
+                  Nosotros
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -69,7 +69,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-120}
                 >
-                  Services
+                  Servicios
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -79,15 +79,19 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact="true"
-                  offset={-80}
+                  offset={100}
                 >
-                  Contact
+                  Contacto
                 </NavLinks>
               </NavItem>
               <NavItem>
-                  <SocialIconLink href="https://api" target="_blank" aria-label="Whatsapp">
-                    <FaWhatsapp />
-                  </SocialIconLink>
+                <SocialIconLink
+                  href="https://api"
+                  target="_blank"
+                  aria-label="Whatsapp"
+                >
+                  <FaWhatsapp />
+                </SocialIconLink>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
