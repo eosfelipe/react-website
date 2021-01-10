@@ -45,7 +45,6 @@ const data = {
   ht8: "Soporte y asesoría por Whatsapp de lunes a sábado",
   buttonLabel: "Start Now",
   imgStart: false,
-  img: require("../../images/file-analysis.svg"),
   alt: "Paper",
   dark: false,
   primary: false,

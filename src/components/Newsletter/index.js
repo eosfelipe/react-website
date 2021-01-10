@@ -31,7 +31,7 @@ const Newsletter = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email === "" && tel === "") {
-      alert("completar campos");
+      alert("Favor de completar campos");
       return false;
     }
     setFormState({
@@ -46,7 +46,6 @@ const Newsletter = () => {
       });
     }, 2000);
     console.log("send form OK");
-    document.getElementById("newsletter").reset();
   };
 
   useEffect(() => {}, [email]);
