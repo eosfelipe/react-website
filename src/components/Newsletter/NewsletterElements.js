@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import bg from "../../images/bg_news.jpg";
 
 export const NewsletterContainer = styled.div`
   color: #f9f9f9;
-  background-color: #cbcbc3;
+  background: url(${bg}) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  -o-object-fit: cover;
+  width: 100%;
+  height: 100%;
 
   @media screen and (max-width: 768px) {
     padding: 10px 0;

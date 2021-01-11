@@ -14,6 +14,7 @@ import {
   NavBtnLink,
   SocialIconLink,
 } from "./NavbarElements";
+import logo from "../../images/logo.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -42,7 +43,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              NORDER
+              <img src={logo} alt="logo_norder" style={{ width: "200px" }} />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />

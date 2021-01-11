@@ -14,6 +14,7 @@ import {
   ImgWrap,
   Img,
 } from "./infoElements";
+import logoN from "../../images/n.png";
 
 const InfoSection = ({
   lightBg,
@@ -41,25 +42,35 @@ const InfoSection = ({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                {headline ? (
+                  <TopLine>{topLine}</TopLine>
+                ) : (
+                  <img src={logoN} alt="norder" />
+                )}
                 {headline && (
                   <Heading lightText={lightText}>{headline}</Heading>
                 )}
-                {!headline ? <Subtitle darkText={darkText}>{description}</Subtitle> : (
+                {!headline ? (
+                  <Subtitle darkText={darkText}>{description}</Subtitle>
+                ) : (
                   <ul>
-                    
-                      
-                      <li><Subtitle style={{marginBottom: 0}} darkText={darkText}>{p1}</Subtitle></li>
-                    
-                    
-                      
-                      <li><Subtitle style={{marginBottom: 0}} darkText={darkText}>{p2}</Subtitle></li>
-                    
-                    
-                      
-                      <li><Subtitle style={{marginBottom: 0}} darkText={darkText}>{p3}</Subtitle></li>
-                    
-                    
+                    <li>
+                      <Subtitle style={{ marginBottom: 0 }} darkText={darkText}>
+                        {p1}
+                      </Subtitle>
+                    </li>
+
+                    <li>
+                      <Subtitle style={{ marginBottom: 0 }} darkText={darkText}>
+                        {p2}
+                      </Subtitle>
+                    </li>
+
+                    <li>
+                      <Subtitle style={{ marginBottom: 0 }} darkText={darkText}>
+                        {p3}
+                      </Subtitle>
+                    </li>
                   </ul>
                 )}
               </TextWrapper>

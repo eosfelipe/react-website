@@ -21,13 +21,11 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <ImageBg src={Hero} alt="" />
+        <ImageBg src={Hero} alt="hero" />
       </HeroBg>
       <HeroContent>
         <HeroH1>A New Order Of Life</HeroH1>
-        <HeroP>
-          Think - Eat - Live
-        </HeroP>
+        <HeroP>Think - Eat - Live</HeroP>
         <HeroBtnWrapper>
           <Button2
             to="contact"

@@ -23,7 +23,7 @@ const data = {
   headline2: "Consulta clínica",
   headline3: "Consulta online",
   t1: "Historial clínico",
-  t2: "Diagnostico nutricional",
+  t2: "Diagnóstico nutricional",
   t3: "Determinación de índice de masa corporal (I.M.C.)",
   t4:
     "Reporte de composición corporal mediante Antropometría (ISAK II) o Bioimpedencia",
@@ -31,7 +31,7 @@ const data = {
   t6: "Método fotoscópico",
   t7: "Educación alimentaria",
   t8:
-    "Elaboración y envío del plan de alimentación personalizado a las 24 horas",
+    "Elaboración y envío del plan de alimentación personalizado las 24 horas",
   t9: "Asesoría nutricional vía Whatsapp de lunes a sábado",
   t10: "Orientación en entrenamiento aeróbico y anaeróbico",
   t11: "Esquema de suplementación",
@@ -40,7 +40,7 @@ const data = {
   ht3: "Educación en patologías: Dislipidemias, HTA y Diabetes",
   ht4: "Asesoría en farmacología",
   ht5: "Consulta online vía Zoom",
-  ht6: "Control corporal por método fotoscopico, circunferencias y peso",
+  ht6: "Control corporal por método fotoscópico, circunferencias y peso",
   ht7: "Esquema de suplementación",
   ht8: "Soporte y asesoría por Whatsapp de lunes a sábado",
   buttonLabel: "Start Now",

@@ -1,12 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -17,6 +11,7 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements";
+import logoN from "../../images/n.png";
 
 const Footer = () => {
   const toggleHome = () => {
@@ -29,7 +24,7 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-              NORDER
+              <img src={logoN} alt="norder" style={{ width: "50%" }} />
             </SocialLogo>
             <WebsiteRights>
               &copy; {new Date().getFullYear()} All right reserved.
