@@ -30,10 +30,18 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} All right reserved.
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://www.facebook.com/Norder-Mx-105626468073988"
+                target="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink
+                href="https://www.instagram.com/norder.mx/"
+                target="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
             </SocialIcons>
