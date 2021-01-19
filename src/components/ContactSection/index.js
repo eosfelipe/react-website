@@ -89,7 +89,7 @@ const ContactSection = () => {
                   name="name"
                   onChange={handleInput}
                   value={formData.name}
-                  required="true"
+                  required={true}
                 />
               </InputGroup>
               <InputGroup>
@@ -99,7 +99,7 @@ const ContactSection = () => {
                   name="phone"
                   onChange={handleInput}
                   value={formData.phone}
-                  required="true"
+                  required={true}
                   maxLength={10}
                 />
                 <Input
@@ -108,7 +108,7 @@ const ContactSection = () => {
                   name="email"
                   onChange={handleInput}
                   value={formData.email}
-                  required="true"
+                  required={true}
                 />
               </InputGroup>
               <InputGroup>

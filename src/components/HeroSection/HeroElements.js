@@ -10,6 +10,7 @@ export const HeroContainer = styled.div`
   height: 800px;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 
   :before {
     content: "";
@@ -37,6 +38,10 @@ export const HeroBg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const VideoBg = styled.video`
@@ -53,6 +58,7 @@ export const ImageBg = styled.img`
   -o-object-fit: cover;
   object-fit: cover;
   background: #0c0c0c;
+  position: absolute;
 `;
 
 export const HeroContent = styled.div`
@@ -69,6 +75,7 @@ export const HeroH1 = styled.h1`
   color: #f9f9f9;
   font-size: 48px;
   text-align: center;
+  z-index: 999;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -84,6 +91,7 @@ export const HeroP = styled.p`
   font-size: 24px;
   text-align: center;
   max-width: 600px;
+  z-index: 999;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -98,6 +106,7 @@ export const HeroBtnWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 999;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

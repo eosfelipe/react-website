@@ -18,3 +18,7 @@ ul {
 .Toastify__progress-bar--default {
   background: #c0a06d !important;
 }
+
+polygon {
+  fill: #f9f9f9 !important;
+}
