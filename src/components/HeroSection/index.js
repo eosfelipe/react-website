@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Slider from "react-animated-slider";
-import "react-animated-slider/build/horizontal.css";
 import Hero from "../../images/hero.jpg";
 import { Button2 } from "../ButtonElements";
 import {
@@ -12,6 +11,7 @@ import {
   HeroP,
   HeroBtnWrapper,
 } from "./HeroElements";
+import "./customSlider.css";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -40,7 +40,7 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home">
-      <Slider autoplay={4000}>
+      <Slider autoplay={4000} className="sliderCustom">
         {slides.map((slide, index) => (
           <HeroBg key={index}>
             <ImageBg src={slide.img} alt={slide.title} />
