@@ -20,32 +20,45 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80} onClick={toggle}>
+          <SidebarLink
+            to="about"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            onClick={toggle}
+          >
             Nosotros
           </SidebarLink>
-          <SidebarLink to="services"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-120} onClick={toggle}>
+          <SidebarLink
+            to="services"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-120}
+            onClick={toggle}
+          >
             Servicios
           </SidebarLink>
-          <SidebarLink to="contact"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80} onClick={toggle}>
+          <SidebarLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            onClick={toggle}
+          >
             Contacto
           </SidebarLink>
-          <SidebarLinkExt href="" target="_blank" aria-label="Whatsapp">
-              <FaWhatsapp  />
+          <SidebarLinkExt
+            href="https://wa.link/6ewvez"
+            target="_blank"
+            aria-label="Whatsapp"
+          >
+            <FaWhatsapp />
           </SidebarLinkExt>
         </SidebarMenu>
       </SidebarWrapper>

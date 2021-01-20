@@ -87,7 +87,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <SocialIconLink
-                  href="https://api"
+                  href="https://wa.link/6ewvez"
                   target="_blank"
                   aria-label="Whatsapp"
                 >

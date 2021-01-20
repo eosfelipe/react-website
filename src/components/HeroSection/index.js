@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Slider from "react-animated-slider";
 import Hero from "../../images/hero.jpg";
+import Hero2 from "../../images/hero_2.png";
+import Hero3 from "../../images/hero_3.png";
 import { Button2 } from "../ButtonElements";
 import {
   HeroContainer,
@@ -27,13 +29,13 @@ const HeroSection = () => {
       description: "Think - Eat - Live",
     },
     {
-      img: Hero,
-      title: "A New Order Of Life 2",
+      img: Hero2,
+      title: "A New Order Of Life",
       description: "Think - Eat - Live",
     },
     {
-      img: Hero,
-      title: "A New Order Of Life 3",
+      img: Hero3,
+      title: "A New Order Of Life",
       description: "Think - Eat - Live",
     },
   ];

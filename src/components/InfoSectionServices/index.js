@@ -30,8 +30,7 @@ const data = {
   t5: "Determinación de somatotipo",
   t6: "Método fotoscópico",
   t7: "Educación alimentaria",
-  t8:
-    "Elaboración y envío del plan de alimentación personalizado las 24 horas",
+  t8: "Elaboración y envío del plan de alimentación personalizado las 24 horas",
   t9: "Asesoría nutricional vía Whatsapp de lunes a sábado",
   t10: "Orientación en entrenamiento aeróbico y anaeróbico",
   t11: "Esquema de suplementación",
@@ -61,7 +60,7 @@ const InfoSectionServices = () => {
               <TextWrapper>
                 <TopLine>{data.topLine}</TopLine>
                 <Heading>{data.headline}</Heading>
-                <ul>
+                <ul style={{ marginTop: "1rem" }}>
                   <li>
                     <Subtitle darkText={data.darkText}>{data.t1}</Subtitle>
                   </li>
@@ -80,12 +79,6 @@ const InfoSectionServices = () => {
                   <li>
                     <Subtitle darkText={data.darkText}>{data.t6}</Subtitle>
                   </li>
-                </ul>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <TextWrapper>
-                <ul>
                   <li>
                     <Subtitle darkText={data.darkText}>{data.t7}</Subtitle>
                   </li>
@@ -103,13 +96,11 @@ const InfoSectionServices = () => {
                   </li>
                 </ul>
               </TextWrapper>
-            </Column2>
-          </InfoRow>
-          <InfoRow>
-            <Column1>
+            </Column1>
+            <Column2>
               <TextWrapper>
                 <Heading>{data.headline2}</Heading>
-                <ul>
+                <ul style={{ marginTop: "1rem" }}>
                   <li>
                     <Subtitle darkText={data.darkText}>{data.ht1}</Subtitle>
                   </li>
@@ -124,10 +115,6 @@ const InfoSectionServices = () => {
                   </li>
                 </ul>
               </TextWrapper>
-            </Column1>
-          </InfoRow>
-          <InfoRow>
-            <Column1>
               <TextWrapper>
                 <Heading>{data.headline3}</Heading>
                 <ul>
@@ -145,8 +132,14 @@ const InfoSectionServices = () => {
                   </li>
                 </ul>
               </TextWrapper>
-            </Column1>
+            </Column2>
           </InfoRow>
+          <div style={{ margin: "2rem 1rem", textAlign: "left" }}>
+            <Heading>
+              Importante: Todas nuestras consultas brindan soporte y asesoría
+              por Whatsapp de lunes a sábado.
+            </Heading>
+          </div>
         </InfoWrapper>
       </InfoContainer>
     </>

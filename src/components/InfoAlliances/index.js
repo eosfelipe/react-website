@@ -27,31 +27,61 @@ const InfoAlliances = () => {
           <InfoGrid>
             <div className="tooltip top">
               <Brand src={require("../../images/tastyweek.png").default} />
-              <span className="tiptext"> -30% OFF</span>
+              <span className="tiptext">30% off Primer pedido</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/mgym.png").default} />
-              <span className="tiptext"> -30% OFF</span>
-            </div>
-            <div className="tooltip top">
-              <Brand src={require("../../images/monsreal.png").default} />
-              <span className="tiptext"> -30% OFF</span>
+              <span className="tiptext">$550 mes</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/redcord.png").default} />
-              <span className="tiptext"> -30% OFF</span>
+              <span className="tiptext">2 Consultas gratis</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/cupra.png").default} />
-              <span className="tiptext"> -30% OFF</span>
+              <span className="tiptext">10% off en suplementos</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/nacion.png").default} />
-              <span className="tiptext"> -30% OFF</span>
+              <span className="tiptext">10% off</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/mos.png").default} />
-              <span className="tiptext"> -30% OFF</span>
+              <span className="tiptext">1ra cita gratis</span>
+            </div>
+            <div className="tooltip top">
+              <Brand src={require("../../images/onebalance.png").default} />
+              <span className="tiptext">10% off</span>
+            </div>
+            <div className="tooltip top">
+              <Brand src={require("../../images/psicologia.png").default} />
+              <span className="tiptext">15% off</span>
+            </div>
+            <div className="tooltip top">
+              <Brand src={require("../../images/raw.png").default} />
+              <span className="tiptext">$350 mes sin inscripción</span>
+            </div>
+            <div className="tooltip top">
+              <Brand src={require("../../images/road.png").default} />
+              <span className="tiptext">1 semana gratis</span>
+            </div>
+            <div className="tooltip top">
+              <Brand src={require("../../images/shukra.png").default} />
+              <span className="tiptext">
+                
+                
+                
+                
+                
+                
+                1 consulta de presoterapia gratis y 10% off
+              
+              
+              
+              
+              
+              
+              </span>
             </div>
           </InfoGrid>
         </InfoWrapper>
