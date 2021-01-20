@@ -30,13 +30,13 @@ const HeroSection = () => {
     },
     {
       img: Hero2,
-      title: "A New Order Of Life",
-      description: "Think - Eat - Live",
+      title: "Focus on your health",
+      description: "Not your weight",
     },
     {
       img: Hero3,
-      title: "A New Order Of Life",
-      description: "Think - Eat - Live",
+      title: "Let's work together",
+      description: "L.N. Eyder Méndez Gamboa",
     },
   ];
 

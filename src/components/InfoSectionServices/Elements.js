@@ -39,12 +39,14 @@ export const InfoRow = styled.div`
 `;
 
 export const Column1 = styled.div`
+  height: 100%;
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
 
 export const Column2 = styled.div`
+  height: 100%;
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
@@ -59,7 +61,7 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.p`
   color: #80808c;
   font-size: 48px;
-  line-height: 16px;
+  /* line-height: 16px; */
   font-weight: 900;
   letter-spacing: 1.4px;
   margin-bottom: 32px;
@@ -72,9 +74,21 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   /* margin-bottom: 24px; */
   font-size: 18px;
+  /* line-height: 1.1; */
+  font-weight: 700;
+  color: ${({ lightText }) => (lightText ? "#f9f9f9" : "#c0a06d")};
+
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+  }
+`;
+
+export const HeadingBottom = styled.h1`
+  /* margin-bottom: 24px; */
+  font-size: 18px;
   line-height: 1.1;
   font-weight: 700;
-  color: ${({ lightText }) => (lightText ? "#f9f9f9" : "#80808C")};
+  color: ${({ lightText }) => (lightText ? "#f9f9f9" : "#80808c")};
 
   @media screen and (max-width: 480px) {
     font-size: 16px;

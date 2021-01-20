@@ -11,6 +11,7 @@ import {
   Subtitle,
   ImgWrap,
   Img,
+  HeadingBottom,
 } from "./Elements";
 
 const data = {
@@ -56,9 +57,11 @@ const InfoSectionServices = () => {
       <InfoContainer lightBg={data.lightBg} id={data.id}>
         <InfoWrapper>
           <InfoRow>
+            <TopLine>{data.topLine}</TopLine>
+          </InfoRow>
+          <InfoRow>
             <Column1>
               <TextWrapper>
-                <TopLine>{data.topLine}</TopLine>
                 <Heading>{data.headline}</Heading>
                 <ul style={{ marginTop: "1rem" }}>
                   <li>
@@ -117,7 +120,7 @@ const InfoSectionServices = () => {
               </TextWrapper>
               <TextWrapper>
                 <Heading>{data.headline3}</Heading>
-                <ul>
+                <ul style={{ marginTop: "1rem" }}>
                   <li>
                     <Subtitle darkText={data.darkText}>{data.ht5}</Subtitle>
                   </li>
@@ -135,10 +138,10 @@ const InfoSectionServices = () => {
             </Column2>
           </InfoRow>
           <div style={{ margin: "2rem 1rem", textAlign: "left" }}>
-            <Heading>
+            <HeadingBottom>
               Importante: Todas nuestras consultas brindan soporte y asesoría
               por Whatsapp de lunes a sábado.
-            </Heading>
+            </HeadingBottom>
           </div>
         </InfoWrapper>
       </InfoContainer>

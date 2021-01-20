@@ -45,7 +45,7 @@ export const ContactRow = styled.div`
 export const Title = styled.p`
   color: #f9f9f9;
   font-size: 48px;
-  line-height: 16px;
+  /* line-height: 16px; */
   font-weight: 900;
   letter-spacing: 1.4px;
   margin-bottom: 32px;

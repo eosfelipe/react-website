@@ -119,7 +119,7 @@ const ContactSection = () => {
                   value={formData.message}
                 />
               </InputGroup>
-              <InputGroup>
+              <InputGroup style={{ marginBottom: 0 }}>
                 <Button
                   type="submit"
                   onClick={handleSubmit}
