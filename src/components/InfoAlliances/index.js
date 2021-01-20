@@ -46,10 +46,6 @@ const InfoAlliances = () => {
               <span className="tiptext">10% off</span>
             </div>
             <div className="tooltip top">
-              <Brand src={require("../../images/mos.png").default} />
-              <span className="tiptext">1ra cita gratis</span>
-            </div>
-            <div className="tooltip top">
               <Brand src={require("../../images/onebalance.png").default} />
               <span className="tiptext">10% off</span>
             </div>
@@ -68,19 +64,7 @@ const InfoAlliances = () => {
             <div className="tooltip top">
               <Brand src={require("../../images/shukra.png").default} />
               <span className="tiptext">
-                
-                
-                
-                
-                
-                
                 1 consulta de presoterapia gratis y 10% off
-              
-              
-              
-              
-              
-              
               </span>
             </div>
           </InfoGrid>
