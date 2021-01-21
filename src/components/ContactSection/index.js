@@ -33,7 +33,7 @@ const ContactSection = () => {
     } else {
       axios({
         method: "POST",
-        url: "http://localhost/contact/",
+        url: "http://localhost/api/",
         headers: { "content-type": "application/json" },
         data: formData,
       })
@@ -80,7 +80,7 @@ const ContactSection = () => {
       <ContactContainer id="contact">
         <ContactWrapper>
           <ContactRow>
-            <Title>Contacto</Title>
+            <Title>Contáctanos</Title>
             <FormWrapper action="#" autoComplete="off">
               <InputGroup>
                 <Input

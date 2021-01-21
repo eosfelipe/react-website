@@ -27,11 +27,13 @@ const InfoAlliances = () => {
           <InfoGrid>
             <div className="tooltip top">
               <Brand src={require("../../images/tastyweek.png").default} />
-              <span className="tiptext">30% off Primer pedido</span>
+              <span className="tiptext">
+                30% off primer pedido + 10% off futuros pedidos
+              </span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/mgym.png").default} />
-              <span className="tiptext">$550 mes</span>
+              <span className="tiptext">$500 mes sin inscripción</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/redcord.png").default} />
@@ -43,7 +45,7 @@ const InfoAlliances = () => {
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/nacion.png").default} />
-              <span className="tiptext">10% off</span>
+              <span className="tiptext">15% off</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/onebalance.png").default} />
@@ -51,7 +53,7 @@ const InfoAlliances = () => {
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/psicologia.png").default} />
-              <span className="tiptext">15% off</span>
+              <span className="tiptext">15% off Terapia</span>
             </div>
             <div className="tooltip top">
               <Brand src={require("../../images/raw.png").default} />
