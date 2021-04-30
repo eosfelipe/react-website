@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   FormWrap,
@@ -10,7 +10,7 @@ import {
   FormInput,
   FormButton,
   Text,
-} from "./SigninElements";
+} from './SigninElements'
 
 const SignIn = () => {
   return (
@@ -32,7 +32,7 @@ const SignIn = () => {
         </FormWrap>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default SignIn;
+export default SignIn

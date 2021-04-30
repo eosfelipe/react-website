@@ -1,5 +1,5 @@
-import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import React from 'react'
+import { FaWhatsapp } from 'react-icons/fa'
 import {
   SidebarContainer,
   Icon,
@@ -10,7 +10,7 @@ import {
   SideBtnWrap,
   SidebarRoute,
   SidebarLinkExt
-} from "./SidebarElements";
+} from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar

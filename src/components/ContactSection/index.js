@@ -1,7 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
-import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React, { useRef, useState, useEffect } from 'react'
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import {
   ContactContainer,
   ContactWrapper,
@@ -12,68 +12,68 @@ import {
   Input,
   TextArea,
   Button,
-} from "./ContactElements";
+} from './ContactElements'
 
 const ContactSection = () => {
-  const firstRender = useRef(true);
+  const firstRender = useRef(true)
   const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
-  const [error, setError] = useState(null);
-  const [mailSent, setMailSent] = useState(false);
-  const [disabled, setDisabled] = useState(true);
+    name: '',
+    phone: '',
+    email: '',
+    message: '',
+  })
+  const [error, setError] = useState(null)
+  const [mailSent, setMailSent] = useState(false)
+  const [disabled, setDisabled] = useState(true)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (disabled) {
-      toast("Favor de llenar todos los campos");
+      toast('Favor de llenar todos los campos')
     } else {
       axios({
-        method: "POST",
-        url: "http://localhost/api/",
-        headers: { "content-type": "application/json" },
+        method: 'POST',
+        url: 'http://localhost/api/',
+        headers: { 'content-type': 'application/json' },
         data: formData,
       })
         .then((result) => {
           if (result.data.sent) {
-            setMailSent(result.data.sent);
-            toast(`${result.data.message}`);
-            setError(false);
+            setMailSent(result.data.sent)
+            toast(`${result.data.message}`)
+            setError(false)
           } else {
-            setError(true);
-            toast(`${result.data.message}`, { onClose: () => setError(false) });
+            setError(true)
+            toast(`${result.data.message}`, { onClose: () => setError(false) })
           }
           setFormData({
-            name: "",
-            phone: "",
-            email: "",
-            message: "",
-          });
-          setDisabled(true);
+            name: '',
+            phone: '',
+            email: '',
+            message: '',
+          })
+          setDisabled(true)
         })
-        .catch((error) => setError(error.message));
+        .catch((error) => setError(error.message))
     }
-  };
+  }
 
   const handleInput = ({ target }) => {
     setFormData({
       ...formData,
       [target.name]: target.value,
-    });
-  };
+    })
+  }
 
   useEffect(() => {
     if (firstRender.current) {
-      firstRender.current = false;
-      return;
+      firstRender.current = false
+      return
     }
-    if (formData.message !== "") {
-      setDisabled(false);
+    if (formData.message !== '') {
+      setDisabled(false)
     }
-  }, [formData.name, formData.email, formData.phone, formData.message]);
+  }, [formData.name, formData.email, formData.phone, formData.message])
 
   return (
     <>
@@ -135,7 +135,7 @@ const ContactSection = () => {
         </ContactWrapper>
       </ContactContainer>
     </>
-  );
-};
+  )
+}
 
-export default ContactSection;
+export default ContactSection

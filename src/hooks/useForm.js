@@ -1,39 +1,39 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
 
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setValues({
       ...values,
       [name]: value,
-    });
-  };
+    })
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setErrors(validate(values));
-    setIsSubmitting(true);
-  };
+    e.preventDefault()
+    setErrors(validate(values))
+    setIsSubmitting(true)
+  }
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
-      callback();
+      callback()
     }
     // eslint-disable-next-line
     return () => setIsSubmitting(false);
-  }, [errors]);
+  }, [errors])
 
-  return { handleChange, values, handleSubmit, errors };
-};
+  return { handleChange, values, handleSubmit, errors }
+}
 
-export default useForm;
+export default useForm

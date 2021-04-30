@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { FaBars, FaWhatsapp } from "react-icons/fa";
-import { IconContext } from "react-icons/lib";
-import { animateScroll as scroll } from "react-scroll";
+import React, { useEffect, useState } from 'react'
+import { FaBars, FaWhatsapp } from 'react-icons/fa'
+import { IconContext } from 'react-icons/lib'
+import { animateScroll as scroll } from 'react-scroll'
 import {
   Nav,
   NavbarContainer,
@@ -13,37 +13,37 @@ import {
   NavBtn,
   NavBtnLink,
   SocialIconLink,
-} from "./NavbarElements";
-import logo from "../../images/logo.png";
+} from './NavbarElements'
+import logo from '../../images/logo.png'
 
 const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
-      setScrollNav(true);
+      setScrollNav(true)
     } else {
-      setScrollNav(false);
+      setScrollNav(false)
     }
-  };
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener('scroll', changeNav)
 
-    return () => window.removeEventListener("scroll", changeNav);
-  }, []);
+    return () => window.removeEventListener('scroll', changeNav)
+  }, [])
 
   const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: '#fff' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <img src={logo} alt="logo_norder" style={{ width: "200px" }} />
+              <img src={logo} alt="logo_norder" style={{ width: '200px' }} />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -99,7 +99,7 @@ const Navbar = ({ toggle }) => {
         </Nav>
       </IconContext.Provider>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

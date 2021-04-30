@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { Link as LinkRouter } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
+import styled from 'styled-components'
+import { Link as LinkRouter } from 'react-router-dom'
+import { Link as LinkScroll } from 'react-scroll'
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? "#80808c" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? '#80808c' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
-`;
+`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
-`;
+`
 export const NavLogo = styled(LinkRouter)`
   color: #f9f9f9;
   justify-self: flex-start;
@@ -38,7 +38,7 @@ export const NavLogo = styled(LinkRouter)`
   font-weight: bold;
   text-decoration: none;
   outline: none;
-`;
+`
 export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
@@ -51,7 +51,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #f9f9f9;
   }
-`;
+`
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -63,11 +63,11 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const NavItem = styled.li`
   height: 80px;
-`;
+`
 
 export const NavLinks = styled(LinkScroll)`
   color: #f9f9f9;
@@ -81,14 +81,14 @@ export const NavLinks = styled(LinkScroll)`
   &.active {
     border-bottom: 3px solid #c0a06d;
   }
-`;
+`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   @media screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 export const NavBtnLink = styled(LinkRouter)`
   border-radius: 50px;
@@ -108,7 +108,7 @@ export const NavBtnLink = styled(LinkRouter)`
     background: #f9f9f9;
     color: #010606;
   }
-`;
+`
 
 export const SocialIconLink = styled.a`
   color: #f9f9f9;
@@ -129,4 +129,4 @@ export const SocialIconLink = styled.a`
     color: #01bf71;
     transition: 0.3s ease-in-out;
   }
-`;
+`

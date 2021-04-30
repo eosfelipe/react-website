@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import styled from 'styled-components'
+import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -27,7 +27,7 @@ export const HeroContainer = styled.div`
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
-`;
+`
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -42,7 +42,7 @@ export const HeroBg = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-`;
+`
 
 export const VideoBg = styled.video`
   width: 100%;
@@ -50,7 +50,7 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #0c0c0c;
-`;
+`
 
 export const ImageBg = styled.img`
   width: 100%;
@@ -59,7 +59,7 @@ export const ImageBg = styled.img`
   object-fit: cover;
   background: #0c0c0c;
   position: absolute;
-`;
+`
 
 export const HeroContent = styled.div`
   z-index: 3;
@@ -69,7 +69,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 export const HeroH1 = styled.h1`
   color: #f9f9f9;
@@ -83,7 +83,7 @@ export const HeroH1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
-`;
+`
 
 export const HeroP = styled.p`
   margin-top: 24px;
@@ -99,7 +99,7 @@ export const HeroP = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
-`;
+`
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
@@ -107,14 +107,14 @@ export const HeroBtnWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   z-index: 999;
-`;
+`
 
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
-`;
+`
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
-`;
+`

@@ -1,6 +1,6 @@
-import React from "react";
-import { animateScroll as scroll } from "react-scroll";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import {
   FooterContainer,
   FooterWrap,
@@ -10,13 +10,13 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
-} from "./FooterElements";
-import logoN from "../../images/n.png";
+} from './FooterElements'
+import logoN from '../../images/n.png'
 
 const Footer = () => {
   const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   return (
     <FooterContainer>
@@ -24,7 +24,7 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-              <img src={logoN} alt="norder" style={{ width: "50%" }} />
+              <img src={logoN} alt="norder" style={{ width: '50%' }} />
             </SocialLogo>
             <WebsiteRights>
               &copy; {new Date().getFullYear()} All right reserved.
@@ -49,7 +49,7 @@ const Footer = () => {
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

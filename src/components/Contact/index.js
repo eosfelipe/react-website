@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import FormContact from "./FormContact";
-import FormSuccess from "./FormSuccess";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
+import FormContact from './FormContact'
+import FormSuccess from './FormSuccess'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   function submitForm() {
-    setIsSubmitted(true);
+    setIsSubmitted(true)
   }
   return (
     <>
@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="form-content-left">
           <Link to="/" className="form-icon">dolla</Link>
           <img
-            src={require("../../images/savings.svg").default}
+            src={require('../../images/savings.svg').default}
             alt="space"
             className="form-img"
           />
@@ -27,7 +27,7 @@ const Contact = () => {
         )}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
