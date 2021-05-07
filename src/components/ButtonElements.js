@@ -1,15 +1,15 @@
-import styled from "styled-components";
-import { Link } from "react-scroll";
+import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
-const primaryColor = "#01bf71";
+const primaryColor = '#01bf71'
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? primaryColor : "#010606")};
+  background: ${({ primary }) => (primary ? primaryColor : '#010606')};
   white-space: nowrap;
-  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#f9f9f9")};
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({ dark }) => (dark ? '#010606' : '#f9f9f9')};
+  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
   cursor: pointer;
@@ -20,9 +20,9 @@ export const Button = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? "#f9f9f9" : primaryColor)};
+    background: ${({ primary }) => (primary ? '#f9f9f9' : primaryColor)};
   }
-`;
+`
 
 export const Button2 = styled(Link)`
   color: #f9f9f9;
@@ -67,4 +67,4 @@ export const Button2 = styled(Link)`
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
-`;
+`

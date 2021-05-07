@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import bg from "../../images/bg_news.jpg";
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import bg from '../../images/bg_news.jpg'
 
 export const NewsletterContainer = styled.div`
   color: #f9f9f9;
@@ -14,7 +14,7 @@ export const NewsletterContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 10px 0;
   }
-`;
+`
 
 export const NewsletterWrapper = styled.div`
   display: grid;
@@ -30,7 +30,7 @@ export const NewsletterWrapper = styled.div`
   @media screen and (max-width: 768px) {
     height: 100%;
   }
-`;
+`
 
 export const NewsletterRow = styled.div`
   display: flex;
@@ -46,14 +46,14 @@ export const NewsletterRow = styled.div`
   @media screen and (max-width: 480px) {
     padding: 1rem 0;
   }
-`;
+`
 
 export const Title = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f9f9f9" : "#80808c")};
+  color: ${({ lightText }) => (lightText ? '#f9f9f9' : '#80808c')};
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -63,12 +63,12 @@ export const Title = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 24px;
   }
-`;
+`
 
 export const FormWrapper = styled.form`
   width: 80%;
   margin: auto;
-`;
+`
 
 export const InputGroup = styled.div`
   position: relative;
@@ -90,14 +90,14 @@ export const InputGroup = styled.div`
       border-bottom: 1px solid #c0a06d;
     }
   }
-`;
+`
 
 export const BtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 export const Button = styled.button`
   color: #f9f9f9;
@@ -144,4 +144,4 @@ export const Button = styled.button`
   &:disabled {
     cursor: not-allowed;
   }
-`;
+`

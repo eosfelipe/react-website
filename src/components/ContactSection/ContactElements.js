@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
   color: #f9f9f9;
@@ -7,7 +7,7 @@ export const ContactContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 10px 0;
   }
-`;
+`
 
 export const ContactWrapper = styled.div`
   display: grid;
@@ -23,7 +23,7 @@ export const ContactWrapper = styled.div`
   @media screen and (max-width: 768px) {
     height: 100%;
   }
-`;
+`
 
 export const ContactRow = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ export const ContactRow = styled.div`
   @media screen and (max-width: 480px) {
     padding: 1rem 0;
   }
-`;
+`
 
 export const Title = styled.p`
   color: #f9f9f9;
@@ -53,11 +53,11 @@ export const Title = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 36px;
   }
-`;
+`
 
 export const FormWrapper = styled.form`
   width: 100%;
-`;
+`
 
 export const InputGroup = styled.div`
   display: flex;
@@ -68,7 +68,7 @@ export const InputGroup = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-`;
+`
 
 export const Input = styled.input`
   font-size: 1rem;
@@ -86,7 +86,7 @@ export const Input = styled.input`
     outline: none;
     border-bottom: 1px solid #c0a06d;
   }
-`;
+`
 
 export const TextArea = styled.textarea`
   font-size: 1rem;
@@ -104,7 +104,7 @@ export const TextArea = styled.textarea`
     outline: none;
     border-bottom: 1px solid #c0a06d;
   }
-`;
+`
 
 export const Button = styled.button`
   color: #f9f9f9;
@@ -151,4 +151,4 @@ export const Button = styled.button`
   &:disabled {
     cursor: not-allowed;
   }
-`;
+`

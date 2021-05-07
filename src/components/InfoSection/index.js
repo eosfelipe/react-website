@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../ButtonElements";
+import React from 'react'
+import { Button } from '../ButtonElements'
 import {
   InfoContainer,
   InfoWrapper,
@@ -13,8 +13,8 @@ import {
   Column2,
   ImgWrap,
   Img,
-} from "./infoElements";
-import logoN from "../../images/n.png";
+} from './infoElements'
+import logoN from '../../images/n.png'
 
 const InfoSection = ({
   lightBg,
@@ -84,7 +84,7 @@ const InfoSection = ({
         </InfoWrapper>
       </InfoContainer>
     </>
-  );
-};
+  )
+}
 
-export default InfoSection;
+export default InfoSection

@@ -1,14 +1,14 @@
-import React from "react";
-import useForm from "../../hooks/useForm";
-import validate from "./validateInfo";
+import React from 'react'
+import useForm from '../../hooks/useForm'
+import validate from './validateInfo'
 
-import "./FormContact.css";
+import './FormContact.css'
 
 const FormContact = ({ submitForm }) => {
   const { handleChange, values, handleSubmit, errors } = useForm(
     submitForm,
     validate
-  );
+  )
 
   return (
     <div className="form-content-right">
@@ -80,7 +80,7 @@ const FormContact = ({ submitForm }) => {
         </button>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default FormContact;
+export default FormContact

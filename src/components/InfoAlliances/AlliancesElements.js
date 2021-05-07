@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
   color: #f9f9f9;
@@ -7,7 +7,7 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 10px 0;
   }
-`;
+`
 
 export const InfoWrapper = styled.div`
   display: grid;
@@ -23,7 +23,7 @@ export const InfoWrapper = styled.div`
   @media screen and (max-width: 768px) {
     height: 100%;
   }
-`;
+`
 
 export const InfoRow = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const InfoRow = styled.div`
   @media screen and (max-width: 768px) {
     padding: 15px 15px;
   }
-`;
+`
 
 export const Title = styled.p`
   color: #80808c;
@@ -47,7 +47,7 @@ export const Title = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 36px;
   }
-`;
+`
 
 export const Description = styled.p`
   font-size: 18px;
@@ -55,7 +55,7 @@ export const Description = styled.p`
   color: #80808c;
   font-weight: lighter;
   line-height: 1.8;
-`;
+`
 
 export const InfoGrid = styled.div`
   display: grid;
@@ -70,9 +70,9 @@ export const InfoGrid = styled.div`
   @media screen and (max-width: 480px) {
     grid-template-columns: repeat(1, 1fr);
   }
-`;
+`
 
 export const Brand = styled.img`
   width: 100%;
   max-width: 300px;
-`;
+`

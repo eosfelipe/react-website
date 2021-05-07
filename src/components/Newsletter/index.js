@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 import {
   NewsletterContainer,
   NewsletterWrapper,
@@ -8,47 +8,47 @@ import {
   InputGroup,
   BtnWrapper,
   Button,
-} from "./NewsletterElements";
+} from './NewsletterElements'
 
-const lightText = false;
+const lightText = false
 
 const Newsletter = () => {
   const [formState, setFormState] = useState({
-    email: "",
-    tel: "",
+    email: '',
+    tel: '',
     isLoading: false,
-  });
+  })
 
-  const { email, tel, isLoading } = formState;
+  const { email, tel, isLoading } = formState
 
   const handleInputChange = ({ target }) => {
     setFormState({
       ...formState,
       [target.name]: target.value,
-    });
-  };
+    })
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    if (email === "" && tel === "") {
-      alert("Favor de completar campos");
-      return false;
+    e.preventDefault()
+    if (email === '' && tel === '') {
+      alert('Favor de completar campos')
+      return false
     }
     setFormState({
       ...formState,
       isLoading: true,
-    });
+    })
     setTimeout(() => {
       setFormState({
-        email: "",
-        tel: "",
+        email: '',
+        tel: '',
         isLoading: false,
-      });
-    }, 2000);
-    console.log("send form OK");
-  };
+      })
+    }, 2000)
+    console.log('send form OK')
+  }
 
-  useEffect(() => {}, [email]);
+  useEffect(() => {}, [email])
 
   return (
     <>
@@ -85,7 +85,7 @@ const Newsletter = () => {
                   onClick={handleSubmit}
                   disabled={isLoading}
                 >
-                  <span>{isLoading ? "Loading..." : "Enviar"}</span>
+                  <span>{isLoading ? 'Loading...' : 'Enviar'}</span>
                 </Button>
               </BtnWrapper>
             </FormWrapper>
@@ -93,7 +93,7 @@ const Newsletter = () => {
         </NewsletterWrapper>
       </NewsletterContainer>
     </>
-  );
-};
+  )
+}
 
-export default Newsletter;
+export default Newsletter

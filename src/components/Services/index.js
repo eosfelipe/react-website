@@ -1,7 +1,7 @@
-import React from "react";
-import Icon1 from "../../images/done.svg";
-import Icon2 from "../../images/financial-data.svg";
-import Icon3 from "../../images/mobile-pay.svg";
+import React from 'react'
+import Icon1 from '../../images/done.svg'
+import Icon2 from '../../images/financial-data.svg'
+import Icon3 from '../../images/mobile-pay.svg'
 import {
   ServicesContainer,
   ServicesH1,
@@ -10,7 +10,7 @@ import {
   ServicesIcon,
   ServicesH2,
   ServicesP,
-} from "./ServicesElements";
+} from './ServicesElements'
 
 const Services = () => {
   return (
@@ -40,7 +40,7 @@ const Services = () => {
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services
