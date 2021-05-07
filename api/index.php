@@ -20,9 +20,9 @@ if( empty($_POST['name']) && empty($_POST['email']) && empty($_POST['phone']) ) 
 if ($_POST){
     //@important: Please change this before using
     http_response_code(200);
-    $subject = 'Contact from: ' . $_POST['name'];
+    $subject = 'Contact from website: ' . $_POST['name'];
     $from = $_POST['email'];
-    $message = $_POST['message'];       
+    $message = 'Tel: '.$_POST['phone'].PHP_EOL.$_POST['message'];       
     //Actual sending email
     $sendEmail = new Sender($adminEmail, $from, $subject, $message);
     if($sendEmail->send()){
