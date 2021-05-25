@@ -12,7 +12,7 @@ export const homeObjOne = {
   alt: 'banana',
   dark: false,
   primary: false,
-  darkText: true,
+  darkText: true
 }
 
 export const homeObjTwo = {
@@ -26,22 +26,14 @@ export const homeObjTwo = {
     'Nutriólogo egresado de la Universidad Marista de Mérida. Especializado en nutrición deportiva y en la evaluación de la composición corporal. Antropometrista Nivel II, miembro actual de International Society for the Advancement of Kinanthropometry (ISAK)',
   buttonLabel: 'Learn More',
   p1: 'Nutriólogo egresado de la Universidad Marista de Mérida.',
-  p2:
-
-
-
-             'Especializado en nutrición deportiva y en la evaluación de la composición corporal.',
-  p3:
-   
-   
-   
-    'Antropometrista Nivel II, miembro actual de International Society for the Advancement of Kinanthropometry (ISAK)',
+  p2: 'Especializado en nutrición deportiva y en la evaluación de la composición corporal.',
+  p3: 'Antropometrista Nivel II, miembro actual de International Society for the Advancement of Kinanthropometry (ISAK)',
   imgStart: true,
   img: require('../../images/person.png'),
   alt: 'person',
   dark: false,
   primary: false,
-  darkText: true,
+  darkText: true
 }
 
 export const homeObjThree = {
@@ -52,13 +44,13 @@ export const homeObjThree = {
   topLine: 'Join our Team',
   // headline: "Creating an account is extremely easy",
   description:
-    'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you\'re ready to go.',
+    'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you re ready to go.',
   buttonLabel: 'Start Now',
   imgStart: false,
   alt: 'Paper',
   dark: false,
   primary: false,
-  darkText: true,
+  darkText: true
 }
 
 export const homeObjFour = {
@@ -69,12 +61,11 @@ export const homeObjFour = {
   topLine: 'Join our Team',
   headline: 'Creating an account is extremely easy',
   description:
-    'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you\'re ready to go.',
+    'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you re ready to go.',
   buttonLabel: 'Start Now',
   imgStart: false,
   alt: 'Paper',
   dark: false,
   primary: false,
-  darkText: true,
+  darkText: true
 }
-

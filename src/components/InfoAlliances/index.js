@@ -5,21 +5,77 @@ import {
   InfoRow,
   Title,
   Description,
-  InfoGrid,
+  InfoGrid
 } from './AlliancesElements'
 import Brands from './Brands'
 
 const images = [
-  {id:1, src: require('../../images/cupra.png').default, title:'Cupra', description:'10% off en suplementos'},
-  {id:2, src: require('../../images/mgym.png').default, title:'MGYM', description:'$500 mes sin inscripción'},
-  {id:3, src: require('../../images/nacion.png').default, title:'Nación', description:'15% off'},
-  {id:4, src: require('../../images/onebalance.png').default, title:'One balance', description:'10% off'},
-  {id:5, src: require('../../images/psicologia.png').default, title:'Psicología', description:'15% off Terapia'},
-  {id:6, src: require('../../images/raw.png').default, title:'Raw', description:'$350 mes sin inscripción'},
-  {id:7, src: require('../../images/redcord.png').default, title:'Redcord', description:'2 Consultas gratis'},
-  {id:8, src: require('../../images/road.png').default, title:'Road', description:'1 semana gratis'},
-  {id:9, src: require('../../images/shukra.png').default, title:'Shukra', description:'1 consulta de presoterapia gratis y 10% off'},
-  {id:10, src: require('../../images/tastyweek.png').default, title:'Tastyweek', description:'30% off primer pedido + 10% off futuros pedidos'},
+  {
+    id: 1,
+    src: require('../../images/cupra.png').default,
+    title: 'Cupra',
+    description: '10% off en suplementos'
+  },
+  {
+    id: 2,
+    src: require('../../images/mgym.png').default,
+    title: 'MGYM',
+    description: '$500 mes sin inscripción'
+  },
+  {
+    id: 3,
+    src: require('../../images/nacion.png').default,
+    title: 'Nación',
+    description: '15% off'
+  },
+  {
+    id: 4,
+    src: require('../../images/onebalance.png').default,
+    title: 'One balance',
+    description: '10% off'
+  },
+  {
+    id: 5,
+    src: require('../../images/psicologia.png').default,
+    title: 'Psicología',
+    description: '15% off Terapia'
+  },
+  {
+    id: 6,
+    src: require('../../images/raw.png').default,
+    title: 'Raw',
+    description: '$350 mes sin inscripción'
+  },
+  {
+    id: 7,
+    src: require('../../images/road.png').default,
+    title: 'Road',
+    description: '1 semana gratis'
+  },
+  {
+    id: 8,
+    src: require('../../images/shukra.png').default,
+    title: 'Shukra',
+    description: '1 consulta de presoterapia gratis y 10% off'
+  },
+  {
+    id: 9,
+    src: require('../../images/tastyweek.png').default,
+    title: 'Tastyweek',
+    description: '30% off primer pedido + 10% off futuros pedidos'
+  },
+  {
+    id: 10,
+    src: require('../../images/fisioestudio.png').default,
+    title: 'Fisioestudio',
+    description: '20% en la primera cita  o 30 min de presoterapia'
+  },
+  {
+    id: 11,
+    src: require('../../images/anytime.png').default,
+    title: 'Anytime',
+    description: '0% Inscripción + Llave de acceso $200 + Mensualidad $625*'
+  }
 ]
 
 const InfoAlliances = () => {
@@ -38,11 +94,16 @@ const InfoAlliances = () => {
           </InfoRow>
           <InfoGrid>
             {console.log(images)}
-            {
-              images.map(image => (
-                <Brands key={image.id} img={image.src} description={image.description} title={image.title} />
+            {images
+              .map((image) => (
+                <Brands
+                  key={image.id}
+                  img={image.src}
+                  description={image.description}
+                  title={image.title}
+                />
               ))
-            }
+              .sort((a, b) => a.props.title.localeCompare(b.props.title))}
           </InfoGrid>
         </InfoWrapper>
       </InfoContainer>

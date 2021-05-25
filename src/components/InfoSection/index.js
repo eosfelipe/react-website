@@ -12,7 +12,7 @@ import {
   BtnWrap,
   Column2,
   ImgWrap,
-  Img,
+  Img
 } from './infoElements'
 import logoN from '../../images/n.png'
 
@@ -33,7 +33,7 @@ const InfoSection = ({
   alt,
   primary,
   dark,
-  dark2,
+  dark2
 }) => {
   return (
     <>
