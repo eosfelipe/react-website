@@ -27,10 +27,10 @@ export const homeObjTwo = {
   buttonLabel: 'Learn More',
   p1: 'Nutriólogo egresado de la Universidad Marista de Mérida.',
   p2: 'Especializado en nutrición deportiva y en la evaluación de la composición corporal.',
-  p3: 'Antropometrista Nivel II, miembro actual de International Society for the Advancement of Kinanthropometry (ISAK)',
+  p3: 'Antropometrista Nivel II, miembro actual de International Society for the Advancement of Kinanthropometry (ISAK).',
   imgStart: true,
-  img: require('../../images/person.png'),
-  alt: 'person',
+  img: require('../../images/avatar_user2.png'),
+  alt: 'L.N. Eyder Méndez Gamboa',
   dark: false,
   primary: false,
   darkText: true
@@ -54,17 +54,21 @@ export const homeObjThree = {
 }
 
 export const homeObjFour = {
-  id: 'contact',
+  id: 'discover2',
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Join our Team',
-  headline: 'Creating an account is extremely easy',
-  description:
-    'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you re ready to go.',
-  buttonLabel: 'Start Now',
+  topLine: 'MFD Cristina Parra Mendiburu',
+  headline:
+    'Certificación en electrólisis terapéutica EPTE, tratamiento clínico de tendinopatías',
+  description: '',
+  buttonLabel: 'Learn More',
+  p1: 'Lic. Fisioterapia y rehabilitación con maestría en fisioterapia deportiva.',
+  p2: 'Egresada de la Universidad Marista de Mérida.',
+  p3: 'Docente en la licenciatura de Fisioterapia y rehabilitación en la U. Marista.',
   imgStart: false,
-  alt: 'Paper',
+  img: require('../../images/avatar_user1.png'),
+  alt: 'person',
   dark: false,
   primary: false,
   darkText: true

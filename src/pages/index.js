@@ -7,7 +7,7 @@ import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
-  homeObjFour,
+  homeObjFour
 } from '../components/InfoSection/Data'
 import InfoSectionServices from '../components/InfoSectionServices'
 import Newsletter from '../components/Newsletter'
@@ -29,6 +29,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjFour} />
       <InfoSectionServices />
       <Newsletter />
       <InfoAlliances />

@@ -103,9 +103,9 @@ export const SocialIcons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px;
+  /* width: 240px; */
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     justify-content: space-evenly;
   }
 `
@@ -115,7 +115,7 @@ export const SocialIconLink = styled.a`
   font-size: 24px;
   margin-left: 1rem;
 
-  @media screen and (max-width:  768px) {
+  @media screen and (max-width: 768px) {
     margin: 0;
   }
 
