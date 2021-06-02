@@ -7,7 +7,7 @@ import {
   FormWrapper,
   InputGroup,
   BtnWrapper,
-  Button,
+  Button
 } from './NewsletterElements'
 
 const lightText = false
@@ -16,7 +16,7 @@ const Newsletter = () => {
   const [formState, setFormState] = useState({
     email: '',
     tel: '',
-    isLoading: false,
+    isLoading: false
   })
 
   const { email, tel, isLoading } = formState
@@ -24,7 +24,7 @@ const Newsletter = () => {
   const handleInputChange = ({ target }) => {
     setFormState({
       ...formState,
-      [target.name]: target.value,
+      [target.name]: target.value
     })
   }
 
@@ -36,13 +36,13 @@ const Newsletter = () => {
     }
     setFormState({
       ...formState,
-      isLoading: true,
+      isLoading: true
     })
     setTimeout(() => {
       setFormState({
         email: '',
         tel: '',
-        isLoading: false,
+        isLoading: false
       })
     }, 2000)
     console.log('send form OK')
@@ -55,9 +55,7 @@ const Newsletter = () => {
       <NewsletterContainer>
         <NewsletterWrapper>
           <NewsletterRow>
-            <Title lightText={lightText}>
-              Quiero recibir recetas y promociones
-            </Title>
+            <Title lightText={lightText}>Join our team</Title>
             <FormWrapper id="newsletter">
               <InputGroup>
                 <input

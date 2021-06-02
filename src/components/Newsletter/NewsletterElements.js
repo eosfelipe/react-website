@@ -37,14 +37,16 @@ export const NewsletterRow = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 3rem;
+  width: 900px;
 
   @media screen and (max-width: 768px) {
-    min-width: 0;
     padding: 2rem;
+    width: 500px;
   }
 
   @media screen and (max-width: 480px) {
     padding: 1rem 0;
+    width: 100%;
   }
 `
 
@@ -73,8 +75,8 @@ export const FormWrapper = styled.form`
 export const InputGroup = styled.div`
   position: relative;
   margin-bottom: 32px;
-  input[type="email"],
-  input[type="tel"] {
+  input[type='email'],
+  input[type='tel'] {
     font-size: 1rem;
     color: #f9f9f9;
     width: 100%;
@@ -122,7 +124,7 @@ export const Button = styled.button`
 
   &::after {
     background: #f9f9f9;
-    content: "";
+    content: '';
     height: 155px;
     left: -75px;
     opacity: 0.2;
