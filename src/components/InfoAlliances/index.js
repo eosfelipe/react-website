@@ -22,7 +22,7 @@ const images = [
     src: require('../../images/mgym.png').default,
     title: 'MGYM',
     description: '$500 mes sin inscripción',
-    cat: 'Gimnasios'
+    cat: 'Gimnasio'
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const images = [
     src: require('../../images/raw.png').default,
     title: 'Raw',
     description: '$350 mes sin inscripción',
-    cat: 'Gimnasios'
+    cat: 'Gimnasio'
   },
   {
     id: 7,
@@ -77,7 +77,7 @@ const images = [
     id: 10,
     src: require('../../images/fisioestudio.png').default,
     title: 'Fisioestudio',
-    description: '20% en la primera cita  o 30 min de presoterapia',
+    description: '20% off en la primera cita  o 30 min de presoterapia',
     cat: 'Fisioterapia'
   },
   {
@@ -85,7 +85,7 @@ const images = [
     src: require('../../images/anytime.png').default,
     title: 'Anytime',
     description: '0% Inscripción + Llave de acceso $200 + Mensualidad $625*',
-    cat: 'Gimnasios'
+    cat: 'Gimnasio'
   }
 ]
 
