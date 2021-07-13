@@ -68,9 +68,9 @@ const images = [
   },
   {
     id: 9,
-    src: require('../../images/tastyweek.png').default,
-    title: 'Tastyweek',
-    description: '30% off primer pedido + 10% off futuros pedidos',
+    src: require('../../images/chispanegra.png').default,
+    title: 'Chispa Negra',
+    description: '20% off para pacientes',
     cat: 'Alimentación'
   },
   {
@@ -104,7 +104,6 @@ const InfoAlliances = () => {
             </Description>
           </InfoRow>
           <InfoGrid>
-            {console.log(images)}
             {images
               .map((image) => (
                 <Brands
